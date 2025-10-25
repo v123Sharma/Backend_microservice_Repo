@@ -8,8 +8,13 @@ const app = express();
 //      res.send("Hi I am from server how are you");
 // });
 
-app.get("/user",(req, res)=>{
+app.get("/user/:userid",(req, res)=>{
+    console.log(req.params)
     res.send({"firstname":"Vivek", "LastName": "Sharma"})
+});
+app.get(/.*fly$/,(req, res)=>{
+    //if api is abbbbbc or abbbbbbbbbbbbbbc it will work but will not work for abcc or aabc
+      res.send("This is new type of api")
 });
 app.post("/user",(req,res)=>{
     console.log("Please send the data")
