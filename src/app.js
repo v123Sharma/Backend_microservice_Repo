@@ -12,8 +12,8 @@ app.post("/signup", async(req,res)=>{
     try{
          await user.save();
          res.status(201).send("User added successfull......");
-    }catch(err){
-         res.status(400).send("Error while saving the user: ", err.messsage)
+    }catch(error){
+         res.status(400).send("Error while saving the user: "+ error.message)
     }
     
 })
@@ -43,6 +43,47 @@ app.get("/feed",async(req,res)=>{
         res.status(400).send("No data is feched! ")  
   }
 });
+app.delete('/users', async (req,res)=>{
+  const userId = req.body.userId;
+  try{
+    const user = await User.findByIdAndDelete(userId);
+    res.send("User deleted successfully..... ")
+  }catch(err){
+       res.status(400).send("Something went wrong..")
+  }
+});
+
+
+app.patch("/users/:userId", async (req, res)=>{
+  const userId = req.params?.userId;
+  const data = req.body;
+
+
+  try{
+      const ALLOWED_UPDATES=[
+    "photoUrl", "about", "skills", "age"
+  ]
+
+  const isUpdateAllowed = Object.keys(data).every((k)=>
+    ALLOWED_UPDATES.includes(k)
+  );
+  if(!isUpdateAllowed){
+    throw new Error("These fileds can not be updated....");
+  }
+    if(data?.skills.length>10){
+      throw new Error("Skills can not be added more than 10 ")
+    }
+     await User.findByIdAndUpdate(userId, data,{
+      runValidators:true
+     });
+     res.send("User updated successfully");
+
+  }catch(err){
+    res.status(400).send("Something went wrong..."+err.message)
+  }
+});
+
+
 connectDB().then(()=>{
     console.log("Database connection is established......");
     app.listen(3000, ()=>{
