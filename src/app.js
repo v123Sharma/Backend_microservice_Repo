@@ -1,19 +1,36 @@
 //console.log("This is my first Backend Project!")
 const express = require("express");
-
 const {connectDB}=require("./config/database");
 const app = express();
-
 const User = require("./models/users");
+const { validateSignUpData } = require("./utils/validation")
+const bcrypt = require("bcrypt");
 app.use(express.json());
 
 app.post("/signup", async(req,res)=>{
-    const user = new User(req.body );
+    
     try{
+         validateSignUpData(req);
+
+
+         const {firstName, lastName, emailId, password} = req.body;
+         const passwordHash = await bcrypt.hash(password, 10)
+         console.log(passwordHash);
+
+
+         const user = new User({
+          firstName,
+          lastName,
+          emailId,
+          password:passwordHash
+
+         });
+
+
          await user.save();
          res.status(201).send("User added successfull......");
     }catch(error){
-         res.status(400).send("Error while saving the user: "+ error.message)
+         res.status(400).send("Error : "+ error.message)
     }
     
 })
