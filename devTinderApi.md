@@ -10,7 +10,7 @@
 6) PATCH/ profile/password.
 
 -----------Connection Request Router------------------>
-7) POST/ request/send/interested/:userId.
+7) POST/ request/send/:status/:userId.
 8) POST/ request/send/ignored/: userId.
 9) POST/ request/review/accepted/: requestId.
 10) POST/ request/review/rejected/: requestId.

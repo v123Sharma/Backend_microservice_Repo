@@ -21,9 +21,9 @@ try{
    }
 
    const activeUser = req.user;
-    console.log(activeUser);
+  //  console.log(activeUser);
    Object.keys(req.body).forEach((key)=>(activeUser[key]=req.body[key]));
-   console.log(activeUser);
+  // console.log(activeUser);
    await activeUser.save();
    res.json({message: `${activeUser.firstName}, Your Profile edited successfully...!`, data:activeUser});
 

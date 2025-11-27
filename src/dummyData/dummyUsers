@@ -1,0 +1,261 @@
+[
+    // User 1 ----------------------------------------------------->
+    {
+        "firstName": "Amit",
+        "lastName": "Sharma",
+        "emailId": "amit.sharma@example.com",
+        "password": "Amit@12345",
+        "age": 25,
+        "gender": "male",
+        "photoUrl": "https://picsum.photos/200",
+        "about": "Full-stack developer who loves coding.",
+        "skills": ["JavaScript", "Node.js", "MongoDB"]
+    },
+
+    // User 2 ----------------------------------------------------->
+    {
+        "firstName": "Priya",
+        "lastName": "Verma",
+        "emailId": "priya.verma@example.com",
+        "password": "Priya@2024#",
+        "age": 29,
+        "gender": "female",
+        "photoUrl": "https://picsum.photos/201",
+        "about": "Automation engineer with 4 years of experience.",
+        "skills": ["Cypress", "JavaScript", "API Testing", "Selenium"]
+    },
+
+    // User 3 ----------------------------------------------------->
+    {
+        "firstName": "Raj",
+        "lastName": "Patel",
+        "emailId": "raj.patel@example.com",
+        "password": "Raj@Patel123!",
+        "age": 32,
+        "gender": "male",
+        "photoUrl": "https://picsum.photos/202",
+        "about": "Backend developer specializing in Node.js.",
+        "skills": ["Node.js", "Express", "MongoDB", "Redis"]
+    },
+
+    // User 4 ----------------------------------------------------->
+    {
+        "firstName": "Sneha",
+        "lastName": "Kulkarni",
+        "emailId": "sneha.kulkarni@example.com",
+        "password": "Sneha#2024*Strong",
+        "age": 22,
+        "gender": "female",
+        "photoUrl": "https://picsum.photos/203",
+        "about": "UI/UX enthusiast turned frontend developer.",
+        "skills": ["HTML", "CSS", "React", "Figma"]
+    },
+
+    // User 5 ----------------------------------------------------->
+    {
+        "firstName": "Alex",
+        "lastName": "Fernandes",
+        "emailId": "alex.fernandes@example.com",
+        "password": "Alex@Pass4321!",
+        "age": 27,
+        "gender": "others",
+        "photoUrl": "https://picsum.photos/204",
+        "about": "DevOps engineer working with cloud platforms.",
+        "skills": ["Docker", "Kubernetes", "AWS", "Linux"]
+    },
+
+    // User 6 ----------------------------------------------------->
+    {
+        "firstName": "Karan",
+        "lastName": "Mehta",
+        "emailId": "karan.mehta@example.com",
+        "password": "Karan@9876#",
+        "age": 30,
+        "gender": "male",
+        "photoUrl": "https://picsum.photos/205",
+        "about": "Passionate about microservices architecture.",
+        "skills": ["Java", "Spring Boot", "MySQL"]
+    },
+
+    // User 7 ----------------------------------------------------->
+    {
+        "firstName": "Riya",
+        "lastName": "Singh",
+        "emailId": "riya.singh@example.com",
+        "password": "Riya@Strong123!",
+        "age": 24,
+        "gender": "female",
+        "photoUrl": "https://picsum.photos/206",
+        "about": "QA engineer with interest in performance testing.",
+        "skills": ["JMeter", "Postman", "Cypress"]
+    },
+
+    // User 8 ----------------------------------------------------->
+    {
+        "firstName": "Manish",
+        "lastName": "Chopra",
+        "emailId": "manish.chopra@example.com",
+        "password": "Manish@2024!",
+        "age": 35,
+        "gender": "male",
+        "photoUrl": "https://picsum.photos/207",
+        "about": "Cloud architect with AWS expertise.",
+        "skills": ["AWS", "Terraform", "Docker", "Linux"]
+    },
+
+    // User 9 ----------------------------------------------------->
+    {
+        "firstName": "Nisha",
+        "lastName": "Rathod",
+        "emailId": "nisha.rathod@example.com",
+        "password": "Nisha@Secure#1",
+        "age": 28,
+        "gender": "female",
+        "photoUrl": "https://picsum.photos/208",
+        "about": "Frontend developer who loves creating UI experiences.",
+        "skills": ["React", "TypeScript", "CSS", "Redux"]
+    },
+
+    // User 10 ---------------------------------------------------->
+    {
+        "firstName": "Vikram",
+        "lastName": "Shetty",
+        "emailId": "vikram.shetty@example.com",
+        "password": "Vikram@123!@#",
+        "age": 31,
+        "gender": "male",
+        "photoUrl": "https://picsum.photos/209",
+        "about": "Working in data engineering with focus on ETL pipelines.",
+        "skills": ["Python", "Airflow", "SQL", "Spark"]
+    },
+
+    // User 11 ---------------------------------------------------->
+    {
+        "firstName": "Ananya",
+        "lastName": "Ghosh",
+        "emailId": "ananya.ghosh@example.com",
+        "password": "Ananya@2024*",
+        "age": 26,
+        "gender": "female",
+        "photoUrl": "https://picsum.photos/210",
+        "about": "Automation expert with interest in AI testing.",
+        "skills": ["Selenium", "Cypress", "JavaScript"]
+    },
+
+    // User 12 ---------------------------------------------------->
+    {
+        "firstName": "Farhan",
+        "lastName": "Khan",
+        "emailId": "farhan.khan@example.com",
+        "password": "Farhan@Pass123!",
+        "age": 34,
+        "gender": "male",
+        "photoUrl": "https://picsum.photos/211",
+        "about": "Backend developer specialized in distributed systems.",
+        "skills": ["Go", "Kafka", "Redis"]
+    },
+
+    // User 13 ---------------------------------------------------->
+    {
+        "firstName": "Isha",
+        "lastName": "Purohit",
+        "emailId": "isha.purohit@example.com",
+        "password": "Isha@2025#",
+        "age": 23,
+        "gender": "female",
+        "photoUrl": "https://picsum.photos/212",
+        "about": "Designer turned frontend engineer.",
+        "skills": ["HTML", "CSS", "Vue.js", "Figma"]
+    },
+
+    // User 14 ---------------------------------------------------->
+    {
+        "firstName": "Rohan",
+        "lastName": "Gupta",
+        "emailId": "rohan.gupta@example.com",
+        "password": "Rohan@7890*",
+        "age": 29,
+        "gender": "male",
+        "photoUrl": "https://picsum.photos/213",
+        "about": "Mobile app developer (Android + Flutter).",
+        "skills": ["Flutter", "Dart", "Kotlin"]
+    },
+
+    // User 15 ---------------------------------------------------->
+    {
+        "firstName": "Divya",
+        "lastName": "Iyer",
+        "emailId": "divya.iyer@example.com",
+        "password": "Divya@Strong789!",
+        "age": 27,
+        "gender": "female",
+        "photoUrl": "https://picsum.photos/214",
+        "about": "Cybersecurity enthusiast.",
+        "skills": ["Linux", "Networking", "Burp Suite"]
+    },
+
+    // User 16 ---------------------------------------------------->
+    {
+        "firstName": "Sandeep",
+        "lastName": "Rao",
+        "emailId": "sandeep.rao@example.com",
+        "password": "Sandeep@Secure$1",
+        "age": 33,
+        "gender": "male",
+        "photoUrl": "https://picsum.photos/215",
+        "about": "DevOps engineer with GitOps expertise.",
+        "skills": ["Docker", "Kubernetes", "GitHub Actions"]
+    },
+
+    // User 17 ---------------------------------------------------->
+    {
+        "firstName": "Meera",
+        "lastName": "Nair",
+        "emailId": "meera.nair@example.com",
+        "password": "Meera@123Strong!",
+        "age": 24,
+        "gender": "female",
+        "photoUrl": "https://picsum.photos/216",
+        "about": "Interested in automation and test design.",
+        "skills": ["Cypress", "Playwright", "JS"]
+    },
+
+    // User 18 ---------------------------------------------------->
+    {
+        "firstName": "Arjun",
+        "lastName": "Desai",
+        "emailId": "arjun.desai@example.com",
+        "password": "Arjun@Power123!",
+        "age": 28,
+        "gender": "male",
+        "photoUrl": "https://picsum.photos/217",
+        "about": "Software engineer in AI/ML domain.",
+        "skills": ["Python", "TensorFlow", "Pandas"]
+    },
+
+    // User 19 ---------------------------------------------------->
+    {
+        "firstName": "Tanvi",
+        "lastName": "Joshi",
+        "emailId": "tanvi.joshi@example.com",
+        "password": "Tanvi@Pass567!",
+        "age": 22,
+        "gender": "female",
+        "photoUrl": "https://picsum.photos/218",
+        "about": "Intern turned full-time front-end developer.",
+        "skills": ["React", "JS", "CSS"]
+    },
+
+    // User 20 ---------------------------------------------------->
+    {
+        "firstName": "Kabir",
+        "lastName": "Malhotra",
+        "emailId": "kabir.malhotra@example.com",
+        "password": "Kabir@789Strong!",
+        "age": 35,
+        "gender": "male",
+        "photoUrl": "https://picsum.photos/219",
+        "about": "Expert in scalable backend APIs.",
+        "skills": ["Node.js", "Express", "MongoDB", "Redis"]
+    }
+]
