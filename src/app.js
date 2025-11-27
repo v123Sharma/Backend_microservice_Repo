@@ -9,10 +9,12 @@ app.use(express.json());
 const authRoute = require("./routes/authRoute");
 const profileRoute = require("./routes/profileRoute");
 const connectionRoute = require("./routes/connectionRoute");
+const userRouter = require("./routes/user");
 
 app.use('/', authRoute);
 app.use('/', profileRoute);
 app.use('/', connectionRoute);
+app.use('/', userRouter);
 
 
 
