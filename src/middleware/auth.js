@@ -5,7 +5,7 @@
     try{
         const {token} = req.cookies;
         if(!token){
-            throw new Error("Token is not Valid....!")
+            return res.status(401).send("Please login.....")
         }
 
         const decodedToken = await jwt.verify(token, "Vivek#1757");
