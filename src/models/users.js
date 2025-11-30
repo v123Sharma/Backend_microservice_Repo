@@ -52,6 +52,7 @@ const userSchema = new mongoose.Schema({
     },
     photoUrl:{
         type : String,
+        required: true,
         default : "https://loremipsum.io/21-of-the-best-placeholder-image-generators/",
          validate(value){
             if(!validator.isURL(value)){
