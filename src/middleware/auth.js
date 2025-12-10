@@ -8,7 +8,7 @@
             return res.status(401).send("Please login.....")
         }
 
-        const decodedToken = await jwt.verify(token, "Vivek#1757");
+        const decodedToken = await jwt.verify(token, process.env.JWT_SECRET_KEY);
 
         const {_id} = decodedToken;
 
