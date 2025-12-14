@@ -1,5 +1,6 @@
 const cron = require("node-cron")
-const {subDays, startOfDay, endOfDay} = require("date-fns")
+const {subDays, startOfDay, endOfDay} = require("date-fns");
+const ConnectionRequest = require("../models/connectionRequest");
 
 cron.schedule("0 8 * * *", async()=>{
     try{
@@ -7,10 +8,10 @@ cron.schedule("0 8 * * *", async()=>{
      const yesterdayStart = startOfDay(yesterday);
      const yesterdayEnd = endOfDay(yesterday);
 
-     const pendingRequests =  await connectionRequestSchema.find({
+     const pendingRequest =  await ConnectionRequest.find({
         status : "interested",
         createdAt : {
-            $get : yesterdayStart,
+            $gte : yesterdayStart,
             $lt  : yesterdayEnd
         },
      }).populate("fromUserId toUserId")
