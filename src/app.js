@@ -22,12 +22,14 @@ const connectionRoute = require("./routes/connectionRoute");
 const userRouter = require("./routes/user");
 const paymentRouter = require("./routes/payments");
 const { initializeSocket } = require("./utils/webSocket");
+const chatRouter = require("./routes/chatRoute");
 
 app.use('/', authRoute);
 app.use('/', profileRoute);
 app.use('/', connectionRoute);
 app.use('/', userRouter);
 app.use('/', paymentRouter);
+app.use('/', chatRouter);
 
 
 const server = http.createServer(app);
